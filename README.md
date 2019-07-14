@@ -1,21 +1,24 @@
 # Nested Data Exercises
 
-### 💪 10 Practice Challenges: Nested `Objects` & `Arrays`
+### 💪 10+ Practice Challenges: Nested `Objects` & `Arrays`
 
 This challenge will test your ability to work with nested Objects and Arrays.
 
-It uses [real-world 'inspired' data.](#data)
+Uses [real-world 'inspired' data.](#data)
+
+> If you are experienced on this topic, expand the "💡 Challenge Yourself!" section (following the instructions.)
 
 ##### Index
 
 * [Instructions](#instructions)
 * [Get Started](#get-started)
 * Preview Test [Data](#data)
-* Stuck? See [Hints](#hints)
+* Stuck? Check [Hints](#hints)
 
 ## Instructions
 
-**Task:** Complete the functions in [`index.js`](./index.js) to meet the test criteria specified by [`test/index.test.js`](./test/index.test.js) ✅
+**Task:** Complete the 10+ functions in [`index.js`](./index.js) and pass all tests specified in [`test/index.test.js`](./test/index.test.js) ✅
+
 The difficulty increases as you progress.
 
 > Before you begin: review [test data below](#data)
@@ -182,10 +185,13 @@ This is the data your code will be tested against.
 
 ## Hints
 
-Some helpful tips 🕵️‍
+#### Helpful tips & reminders 🔎
 
+* **Critical:** Don't make assumptions about input data types. (Convert/handle `Numbers` & `null`)
+    * Convert **number strings** into **actual numbers** with built-in functions `parseInt`, `parseFloat`, `Number`, etc.
 * Ensure your functions **`return somethingUseful`.**
 * Make sure you understand the requirements. All the words used? Try list the steps in comments first.
+* Don't forget the source data uses `snake_case` naming.
 * Pay close attention to array vs. object syntax (`vehicles[0].name` vs. `character.vehicles`.)
 * Some of the functions include detailed instructions.
 * You might have to infer the desired fields. Carefully read the description and function name (description included above the function.)

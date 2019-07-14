@@ -1,92 +1,13 @@
 /*
+> 🚀 Before you begin:
+> Review the shape of the sample data in README.md: https://github.com/justsml/nested-data-exercises#data
 
-SCROLL TO END OF COMMENTS TO START CODING
+// Then, complete the functions below!
 
-> Before you begin, review test data below:
 
-```js
-// Sample data - credit: SWAPI.co (yes 🤓 purists, it's a bit out of date. Not the objective.)
-{
-	"name": "Luke Skywalker",
-	"height": "172",
-	"mass": "77",
-	"hair_color": "blond",
-	"skin_color": "fair",
-	"eye_color": "blue",
-	"birth_year": "19BBY",
-	"gender": "male",
-	"homeworld": "Tatooine",
-	"films": [
-		"A New Hope",
-		"The Empire Strikes Back",
-		"Return of the Jedi",
-		"Revenge of the Sith",
-		"The Force Awakens"
-	],
-	"species": [
-		"Human"
-	],
-	"vehicles": [
-		{
-      "name": "Snowspeeder",
-      "model": "t-47 airspeeder",
-      "manufacturer": "Incom corporation",
-      "cost_in_credits": null,
-      "length": "4.5",
-      "max_atmosphering_speed": "650",
-      "crew": 2,
-      "passengers": 0,
-      "cargo_capacity": "10"
-    },
-		{
-      "name": "Imperial Speeder Bike",
-      "model": "74-Z speeder bike",
-      "manufacturer": "Aratech Repulsor Company",
-      "cost_in_credits": "8000",
-      "length": "3",
-      "max_atmosphering_speed": "360",
-      "crew": 1,
-      "passengers": 1,
-      "cargo_capacity": "4"
-    }
-	],
-	"starships": [
-		{
-      "name": "X-wing",
-      "model": "T-65 X-wing",
-      "manufacturer": "Incom Corporation",
-      "cost_in_credits": 149999,
-      "length": "12.5",
-      "max_atmosphering_speed": "1050",
-      "crew": 1,
-      "passengers": 0,
-      "cargo_capacity": "110",
-      "consumables": "1 week",
-      "hyperdrive_rating": "1.0",
-      "MGLT": "100",
-      "starship_class": "Starfighter"
-    },
-    {
-      "name": "Imperial shuttle",
-      "model": "Lambda-class T-4a shuttle",
-      "manufacturer": "Sienar Fleet Systems",
-      "cost_in_credits": 240000,
-      "length": "20",
-      "max_atmosphering_speed": "850",
-      "crew": 6,
-      "passengers": 20,
-      "cargo_capacity": "80000",
-      "consumables": "2 months",
-      "hyperdrive_rating": "1.0",
-      "MGLT": "50",
-      "starship_class": "Armed government transport"
-    }
-	],
-	"created": "2014-12-09T13:50:51.644000Z",
-	"edited": "2014-12-20T21:17:56.891000Z",
-	"url": "https://swapi.co/api/people/1/"
-}
-```
+// 👇 COMPLETE YOUR WORK BELOW 👇
+// 👇 COMPLETE YOUR WORK BELOW 👇
+// 👇 COMPLETE YOUR WORK BELOW 👇
 */
 
 /**
@@ -94,10 +15,9 @@ SCROLL TO END OF COMMENTS TO START CODING
  * @instructions
  * Must return input object's `name` property.
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: `Luke Skywalker`
+ * Sample data expected output: `Luke Skywalker`
 */
-function getName(character) {
+function getName (character) {
   // ⭐️ Example Solution Provided For First Function ⭐️
   return character.name
 }
@@ -107,10 +27,9 @@ function getName(character) {
  * @instructions
  * Must return the number of elements in the `films` property.
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: 5
+ * Sample data expected output: 5
  */
-function getFilmCount(character) {
+function getFilmCount (character) {
   // TODO: Add your code inside the functions (others below)
 
 }
@@ -122,7 +41,7 @@ function getFilmCount(character) {
  *    Template: `{name}, {height}cm, {weight}kg. Featured in {film count} films.`
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
-function getSummary(character) {
+function getSummary (character) {
 
 }
 
@@ -130,20 +49,20 @@ function getSummary(character) {
  * ### Challenge `getVehiclesCostInCreditsSumTotal`
  * @instructions
  * Sum the total cost in credits for all vehicles defined on the input character.
- * Sample data example output: 8000
+ * Sample data expected output: 8000
 */
-function getVehiclesCostInCreditsSumTotal(character) {
+function getVehiclesCostInCreditsSumTotal (character) {
 
 }
 
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
  * @instructions
- * Sum the number of crew and passenger seats in both vehicles and starships.
+ * Sum the number of crew and passenger spots in both vehicles and starships.
  *
- * Sample data example output: 27
+ * Sample data expected output: 27
 */
-function getStarshipPassengerAndCrewSumTotal(character) {
+function getStarshipPassengerAndCrewSumTotal (character) {
 
 }
 
@@ -152,42 +71,43 @@ function getStarshipPassengerAndCrewSumTotal(character) {
  * @instructions
  * Sum the total cargo capacity for all vehicles and starships.
  *
- * Sample data example output: 80124
+ * Sample data expected output: 80124
 */
-function getCargoCapacityTotal(character) {
+function getCargoCapacityTotal (character) {
 
 }
 
 /**
  * ### Challenge `getFastestStarshipName`
  * @instructions
+ * Find the fastest starship.
+ * Determine the correct field to compare, and return the name of the fastest.
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: `X-wing`
+ * Sample data expected output: `X-wing`
 */
-function getFastestStarshipName(character) {
+function getFastestStarshipName (character) {
 
 }
 
 /**
  * ### Challenge `getLargestCargoStarshipModelName`
  * @instructions
+ * Determine the starship with the largest cargo capacity.
+ * Return it's **_model_name_** property.
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: `Lambda-class T-4a shuttle`
+ * Sample data expected output: `Lambda-class T-4a shuttle`
 */
-function getLargestCargoStarshipModelName(character) {
+function getLargestCargoStarshipModelName (character) {
 
 }
 
 /**
  * ### Challenge `getSlowestVehicleOrStarshipName`
  * @instructions
+ * Find the slowest vehicle OR starship. Return its name.
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: `Imperial Speeder Bike`
 */
-function getSlowestVehicleOrStarshipName(character) {
+function getSlowestVehicleOrStarshipName (character) {
 
 }
 
@@ -195,29 +115,34 @@ function getSlowestVehicleOrStarshipName(character) {
  * ### Challenge `getFirstStarshipName`
  * @instructions
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: `X-wing`
 */
-function getFirstStarshipName(character) {
+function getFirstStarshipName (character) {
 
 }
 
 /**
  * ### Challenge `getNthFilm`
  * @instructions
+ * Return the Nth `films` value (in this case title).
+ * Rules: N starts at 1, and includes only the range 1-3.
+ * Any numbers outside that range should throw an error.
+ * The Error must mention the name of your favorite _extra cheesy_ movie.
  *
- * Input Sample: "Person" object (see #Data README section)
- * Output Example: 1 -> `A New Hope`
+ * Given film #1, expected output: `A New Hope`
+ * Given film #7, expected output: `Space Balls`
 */
-function getNthFilm(character, filmNumber) {
+function getNthFilm (character, filmNumber) {
 
 }
 
 
-/// ////// END OF CHALLENGE /////////
-/// ////// END OF CHALLENGE /////////
-/// ////// END OF CHALLENGE /////////
 
+
+
+
+/// ////// END OF CHALLENGE /////////
+/// ////// END OF CHALLENGE /////////
+/// ////// END OF CHALLENGE /////////
 if (typeof exports !== 'undefined') {
   // IGNORE: Test/Env Detected
   // For Node/Non-browser test env
