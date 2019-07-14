@@ -79,7 +79,7 @@ function getStarshipPassengerAndCrewSumTotal (character) {
  * ### Challenge `getNthFilm`
  * @instructions
  * Return the Nth `films` value (in this case title).
- * Rules: N starts at 1, and includes only the range 1-3.
+ * Rules: filmNumber starts at 1 and refers to the *first* film, and includes only the range 1-3.
  * Any numbers outside that range should throw an error.
  * The Error must mention the name of your favorite _extra cheesy_ movie.
  *
