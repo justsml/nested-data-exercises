@@ -1,0 +1,27 @@
+{
+  "name": "array-exercises",
+  "version": "1.1.1",
+  "description": "practice array & data-structure skills here!",
+  "main": "index.js",
+  "module": "main.js",
+  "repository": {
+    "url": "git@github.com:LambdaSchool/array-exercises.git",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "lite-server",
+    "test": "mocha --reporter nyan --full-trace false './test'"
+  },
+  "keywords": ["arrays", "exercises", "workout"],
+  "author": "Dan Levy",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "mocha": "^6.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "lite-server": "^2.5.3"
+  }
+}
