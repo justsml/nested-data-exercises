@@ -23,7 +23,7 @@
       "name": "Imperial Speeder Bike",
       "model": "74-Z speeder bike",
       "manufacturer": "Aratech Repulsor Company",
-      "cost_in_credits": "8000",
+      "cost_in_credits": 8000,
       "length": "3",
       "max_atmosphering_speed": "360",
       "crew": 1,

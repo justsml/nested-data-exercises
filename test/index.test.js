@@ -42,20 +42,20 @@ describe('getFilmCount()', () => {
 
 describe('getSummary()', () => {
   it('expected bio for Luke', () => { expect(getSummary(lukeSkywalker)).to.eq(`Luke Skywalker, 172cm, 77kg. Featured in 5 films.`) })
-  it('expected bio for Leia', () => { expect(getSummary(leiaOrgana)).to.eq(`Luke Skywalker, 172cm, 77kg. Featured in 5 films.`) })
-  it('expected bio for Obi-Wan', () => { expect(getSummary(obiWanKenobi)).to.eq(`Luke Skywalker, 172cm, 77kg. Featured in 5 films.`) })
+  it('expected bio for Leia', () => { expect(getSummary(leiaOrgana)).to.eq(`Leia Organa, 150cm, 49kg. Featured in 5 films.`) })
+  it('expected bio for Obi-Wan', () => { expect(getSummary(obiWanKenobi)).to.eq(`Obi-Wan Kenobi, 182cm, 77kg. Featured in 6 films.`) })
 })
 
 describe('getVehiclesCostInCreditsSumTotal()', () => {
   it('Luke\'s vehicle cost total', () => { expect(getVehiclesCostInCreditsSumTotal(lukeSkywalker)).to.eq(8000) })
   it('Leia\'s vehicle cost total', () => { expect(getVehiclesCostInCreditsSumTotal(leiaOrgana)).to.eq(8000) })
-  it('Obi-Wan\'s vehicle cost total', () => { expect(getVehiclesCostInCreditsSumTotal(obiWanKenobi)).to.eq(8000) })
+  it('Obi-Wan\'s vehicle cost total', () => { expect(getVehiclesCostInCreditsSumTotal(obiWanKenobi)).to.eq(0) })
 })
 
 describe('getStarshipPassengerAndCrewSumTotal()', () => {
   it('Luke\'s crew+passenger capacity', () => { expect(getStarshipPassengerAndCrewSumTotal(lukeSkywalker)).to.eq(27) })
-  it('Leia\'s crew+passenger capacity', () => { expect(getStarshipPassengerAndCrewSumTotal(leiaOrgana)).to.eq(27) })
-  it('Obi-Wan\'s crew+passenger capacity', () => { expect(getStarshipPassengerAndCrewSumTotal(obiWanKenobi)).to.eq(27) })
+  it('Leia\'s crew+passenger capacity', () => { expect(getStarshipPassengerAndCrewSumTotal(leiaOrgana)).to.eq(0) })
+  it('Obi-Wan\'s crew+passenger capacity', () => { expect(getStarshipPassengerAndCrewSumTotal(obiWanKenobi)).to.eq(48856) })
 })
 
 describe('getCargoCapacityTotal()', () => {

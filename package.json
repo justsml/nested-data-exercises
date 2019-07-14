@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "lite-server",
-    "test": "mocha --full-trace false './test'"
+    "test": "mocha --growl --reporter=list --bail './test'"
   },
   "keywords": [
     "object",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
+    "growl": "^1.10.5",
     "lite-server": "^2.5.3"
   }
 }

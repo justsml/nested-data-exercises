@@ -31,18 +31,18 @@ function getName (character) {
  */
 function getFilmCount (character) {
   // TODO: Add your code inside the functions (others below)
-
+  return character.films.length
 }
 
 /**
  * ### Challenge `getSummary`
  * @instructions
  * Combine specified field values and return them in the following string format:
- *    Template: `{name}, {height}cm, {weight}kg. Featured in {film count} films.`
+ *    Template: `{name}, {height}cm, {mass}kg. Featured in {film count} films.`
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
 function getSummary (character) {
-
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.`
 }
 
 /**
@@ -52,7 +52,9 @@ function getSummary (character) {
  * Sample data expected output: 8000
 */
 function getVehiclesCostInCreditsSumTotal (character) {
-
+  return character.vehicles.reduce((total, v) => {
+    return v.cost_in_credits + total
+  }, 0)
 }
 
 /**
@@ -63,6 +65,9 @@ function getVehiclesCostInCreditsSumTotal (character) {
  * Sample data expected output: 27
 */
 function getStarshipPassengerAndCrewSumTotal (character) {
+  return character.starships.reduce((total, s) => {
+    return s.crew + s.passengers + total
+  }, 0)
 
 }
 
