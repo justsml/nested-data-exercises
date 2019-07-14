@@ -94,6 +94,7 @@ function getNthFilm (character, filmNumber) {
  * ### Challenge `getCargoCapacityTotal`
  * @instructions
  * Sum the total cargo capacity for *all* vehicles and starships.
+ * Some objects may not have a value for their cargo capacity.
  *
  * Sample data expected output: 80124
 */
@@ -106,6 +107,7 @@ function getCargoCapacityTotal (character) {
  * @instructions
  * Find the fastest starship (by atmospheric speed.)
  * Determine the correct field to compare, and return the name of the fastest.
+ * If the character does not have any starships, then return 'none'.
  *
  * Sample data expected output: `X-wing`
 */
@@ -118,6 +120,7 @@ function getFastestStarshipName (character) {
  * @instructions
  * Determine the starship with the largest cargo capacity.
  * Return it's **_model_** property.
+ * If the character does not have any starships, then return 'none'.
  *
  * Sample data expected output: `Lambda-class T-4a shuttle`
 */
@@ -129,6 +132,7 @@ function getLargestCargoStarshipModelName (character) {
  * ### Challenge `getSlowestVehicleOrStarshipName`
  * @instructions
  * Find the slowest vehicle OR starship. Return its name.
+ * If the character does not have any starships or vehicles, then return 'none'.
  *
 */
 function getSlowestVehicleOrStarshipName (character) {
