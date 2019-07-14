@@ -13,7 +13,6 @@ It uses [real-world 'inspired' data.](#data)
 * Preview Test [Data](#data)
 * Stuck? See [Hints](#hints)
 
-
 ## Instructions
 
 **Task:** Complete the functions in [`index.js`](./index.js) to meet the test criteria specified by [`test/index.test.js`](./test/index.test.js) ✅
@@ -31,7 +30,7 @@ The difficulty increases as you progress.
 1. `getLargestCargoStarshipModelName(character)` -> `Lambda-class T-4a shuttle`
 1. `getSlowestVehicleOrStarshipName(character)` -> `Imperial Speeder Bike`
 1. `getFirstStarshipName(character)` -> `X-wing`
-1. `getNthFilm(character, filmNumber)` -> 1 -> `A New Hope`
+1. `getNthFilm(character, filmNumber)` filmNumber=1 -> `A New Hope`
 
 
 <details>
@@ -95,8 +94,9 @@ npm start
 
 This is the data your code will be tested against.
 ```js
-// Test data - credit: SWAPI.co
-// (Yes 🤓 purists. It's a bit out of date. Focus. See instructions above.)
+// Complete Test Data Object (credit: https://SWAPI.co)
+// Side note: Yes Star Wars 🤓 purists. It's a bit out of date. Talk to SWAPI about it.
+// Focus & follow instructions above. 🤖
 {
 	"name": "Luke Skywalker",
 	"height": "172",
@@ -180,14 +180,13 @@ This is the data your code will be tested against.
 
 
 
-
 ## Hints
 
 Some helpful tips 🕵️‍
 
-* Your functions **must `return somethingUseful`.**
-* Make sure you understand the requirements. Try list the steps in comments first.
+* Ensure your functions **`return somethingUseful`.**
+* Make sure you understand the requirements. All the words used? Try list the steps in comments first.
 * Pay close attention to array vs. object syntax (`vehicles[0].name` vs. `character.vehicles`.)
 * Some of the functions include detailed instructions.
-* You might have to infer the desired fields. Carefully read the description and function name (comments above the function.)
+* You might have to infer the desired fields. Carefully read the description and function name (description included above the function.)
 

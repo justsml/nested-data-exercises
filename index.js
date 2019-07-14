@@ -89,15 +89,6 @@ SCROLL TO END OF COMMENTS TO START CODING
 ```
 */
 
-/*
-// EXAMPLE TEST METHOD
-// Get's input object's `homeworld` value.
-// Solutions to the challenges will necessarily be more complex. Solve it!
-function getHomeworld(character) {
-  return character.homeworld
-}
-*/
-
 /**
  * ### Challenge `getName`
  * @instructions
@@ -107,8 +98,8 @@ function getHomeworld(character) {
  * Output Example: `Luke Skywalker`
 */
 function getName(character) {
-  // TODO: Add your code inside the functions
-
+  // ⭐️ Example Solution Provided For First Function ⭐️
+  return character.name
 }
 
 /**
@@ -118,9 +109,10 @@ function getName(character) {
  *
  * Input Sample: "Person" object (see #Data README section)
  * Output Example: 5
-*/
+ */
 function getFilmCount(character) {
-  // TODO: Add your solution here.
+  // TODO: Add your code inside the functions (others below)
+
 }
 
 /**
@@ -229,14 +221,16 @@ function getNthFilm(character, filmNumber) {
 if (typeof exports !== 'undefined') {
   // IGNORE: Test/Env Detected
   // For Node/Non-browser test env
-  module.exports = {
-    sum,
-    doubleCharacters,
-    doubleNumbers,
-    backwardsify,
-    interleave,
-    makeRange,
-    countByFirstLetter,
-    groupByFirstLetter
-  }
+  module.exports = module.exports || {}
+  if (getName) { module.exports.getName = getName }
+  if (getFilmCount) { module.exports.getFilmCount = getFilmCount }
+  if (getSummary) { module.exports.getSummary = getSummary }
+  if (getVehiclesCostInCreditsSumTotal) { module.exports.getVehiclesCostInCreditsSumTotal = getVehiclesCostInCreditsSumTotal }
+  if (getStarshipPassengerAndCrewSumTotal) { module.exports.getStarshipPassengerAndCrewSumTotal = getStarshipPassengerAndCrewSumTotal }
+  if (getCargoCapacityTotal) { module.exports.getCargoCapacityTotal = getCargoCapacityTotal }
+  if (getFastestStarshipName) { module.exports.getFastestStarshipName = getFastestStarshipName }
+  if (getLargestCargoStarshipModelName) { module.exports.getLargestCargoStarshipModelName = getLargestCargoStarshipModelName }
+  if (getSlowestVehicleOrStarshipName) { module.exports.getSlowestVehicleOrStarshipName = getSlowestVehicleOrStarshipName }
+  if (getFirstStarshipName) { module.exports.getFirstStarshipName = getFirstStarshipName }
+  if (getNthFilm) { module.exports.getNthFilm = getNthFilm }
 }

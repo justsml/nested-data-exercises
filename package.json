@@ -1,24 +1,31 @@
 {
-  "name": "array-exercises",
-  "version": "1.1.1",
+  "name": "nested-data-exercises",
+  "version": "1.0.1",
   "description": "practice array & data-structure skills here!",
   "main": "index.js",
-  "module": "main.js",
+  "homepage": "https://codesandbox.io/s/github/justsml/nested-data-exercises?previewwindow=tests",
   "repository": {
-    "url": "git@github.com:LambdaSchool/array-exercises.git",
+    "url": "git@github.com:justsml/nested-data-exercises.git",
     "type": "git"
   },
   "scripts": {
     "start": "lite-server",
-    "test": "mocha --reporter nyan --full-trace false './test'"
+    "test": "mocha --full-trace false './test'"
   },
-  "keywords": ["arrays", "exercises", "workout"],
+  "keywords": [
+    "object",
+    "array",
+    "traversal",
+    "exercises",
+    "workout"
+  ],
   "author": "Dan Levy",
   "license": "MIT",
   "dependencies": {
     "chai": "^4.2.0",
     "esm": "^3.2.25",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "test": "^0.6.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
