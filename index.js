@@ -68,18 +68,24 @@ function getStarshipPassengerAndCrewSumTotal (character) {
   return character.starships.reduce((total, s) => {
     return s.crew + s.passengers + total
   }, 0)
-
 }
 
 /**
  * ### Challenge `getCargoCapacityTotal`
  * @instructions
- * Sum the total cargo capacity for all vehicles and starships.
+ * Sum the total cargo capacity for *all* vehicles and starships.
  *
  * Sample data expected output: 80124
 */
 function getCargoCapacityTotal (character) {
+  const starshipCargo = character.starships.reduce((total, s) => {
+    return s.cargo_capacity == null ? total : total + parseInt(s.cargo_capacity, null)
+  }, 0)
+  const vehicleCargo = character.vehicles.reduce((total, v) => {
+    return v.cargo_capacity == null ? total : total + parseInt(v.cargo_capacity, null)
+  }, 0)
 
+  return starshipCargo + vehicleCargo
 }
 
 /**

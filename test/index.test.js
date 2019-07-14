@@ -60,8 +60,8 @@ describe('getStarshipPassengerAndCrewSumTotal()', () => {
 
 describe('getCargoCapacityTotal()', () => {
   it('Luke\'s expected cargo total', () => { expect(getCargoCapacityTotal(lukeSkywalker)).to.eq(80124) })
-  it('Leia\'s expected cargo total', () => { expect(getCargoCapacityTotal(leiaOrgana)).to.eq(80124) })
-  it('Obi-Wan\'s expected cargo total', () => { expect(getCargoCapacityTotal(obiWanKenobi)).to.eq(80124) })
+  it('Leia\'s expected cargo total', () => { expect(getCargoCapacityTotal(leiaOrgana)).to.eq(4) })
+  it('Obi-Wan\'s expected cargo total', () => { expect(getCargoCapacityTotal(obiWanKenobi)).to.eq(50001860) })
 })
 
 describe('getFastestStarshipName()', () => {
