@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "lite-server",
-    "test": "mocha --growl --reporter=list --bail './test'"
+    "test": "mocha --growl --reporter=list --bail './test'",
+    "test:watch": "mocha --growl --reporter=list --bail --watch './test'"
   },
   "keywords": [
     "object",

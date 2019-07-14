@@ -64,14 +64,20 @@ The CodeSandbox option is fast & highly recommended.
 1. Fork & clone to your local computer
 1. `cd` into your newly cloned repository
 1. Install using `npm`
-1. Run standard test command
+1. Run test command
+
 
 ```sh
 git clone <insert your git clone url here>
 cd <repo folder name>
 npm install
-npm test
+npm run test:watch
+#####
+### Or without fs watching:
+# npm test
 ```
+
+**NOTE:** In local development, use the file watcher command: `npm run test:watch`.
 
 </details>
 
