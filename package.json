@@ -1,6 +1,6 @@
 {
   "name": "nested-data-exercises",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "practice array & data-structure skills here!",
   "main": "index.js",
   "homepage": "https://codesandbox.io/s/github/justsml/nested-data-exercises?previewwindow=tests",
@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "lite-server",
-    "test": "mocha --growl --reporter=list --bail './test'",
+    "build": "npx browserify ./data/people-export.js -o ./data/fixtures-bundle.js",
+    "test": "mocha --growl --reporter=list './test'",
     "test:watch": "mocha --growl --reporter=list --bail --watch './test'"
   },
   "keywords": [
