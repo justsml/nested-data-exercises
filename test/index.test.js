@@ -92,5 +92,5 @@ describe('getLargestCargoStarshipModelName()', () => {
 describe('getSlowestVehicleOrStarshipName()', () => {
   it('Luke\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(lukeSkywalker)).to.eq(`Imperial Speeder Bike`) })
   it('Leia\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(leiaOrgana)).to.eq(`Imperial Speeder Bike`) })
-  it('Obi-Wan\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(obiWanKenobi)).to.eq(`Jedi starfighter`) })
+  it('Obi-Wan\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(obiWanKenobi)).to.eq(`Tribubble bongo`) })
 })
