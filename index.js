@@ -35,6 +35,17 @@ function getFilmCount (character) {
 }
 
 /**
+ * ### Challenge `getFirstStarshipName`
+ * @instructions
+ * Return first starship's name from `starships` property.
+ * If length is < 0. Return 'none'
+*/
+function getFirstStarshipName (character) {
+  if (character.starships.length === 0) return 'none'
+  return character.starships[0].name
+}
+
+/**
  * ### Challenge `getSummary`
  * @instructions
  * Combine specified field values and return them in the following string format:
@@ -71,6 +82,23 @@ function getStarshipPassengerAndCrewSumTotal (character) {
 }
 
 /**
+ * ### Challenge `getNthFilm`
+ * @instructions
+ * Return the Nth `films` value (in this case title).
+ * Rules: N starts at 1, and includes only the range 1-3.
+ * Any numbers outside that range should throw an error.
+ * The Error must mention the name of your favorite _extra cheesy_ movie.
+ *
+ * Given film #1, expected output: `A New Hope`
+ * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
+*/
+function getNthFilm (character, filmNumber) {
+  if (filmNumber < 1 || filmNumber > 3) throw new Error(`There are only 3 Star Wars movies, #1-3. Flan fiction excluded.`)
+  let filmIndex = filmNumber - 1
+  return character.films[filmIndex]
+}
+
+/**
  * ### Challenge `getCargoCapacityTotal`
  * @instructions
  * Sum the total cargo capacity for *all* vehicles and starships.
@@ -91,25 +119,33 @@ function getCargoCapacityTotal (character) {
 /**
  * ### Challenge `getFastestStarshipName`
  * @instructions
- * Find the fastest starship.
+ * Find the fastest starship (by atmospheric speed.)
  * Determine the correct field to compare, and return the name of the fastest.
  *
  * Sample data expected output: `X-wing`
 */
 function getFastestStarshipName (character) {
-
+  const sortedShips = [...character.starships].sort((a, b) => {
+    if (parseInt(a.max_atmosphering_speed, null) === parseInt(b.max_atmosphering_speed, null)) return 0
+    return parseInt(a.max_atmosphering_speed, null) < parseInt(b.max_atmosphering_speed, null) ? 1 : -1
+  })
+  return sortedShips.length > 0 ? sortedShips[0].name : `none`
 }
 
 /**
  * ### Challenge `getLargestCargoStarshipModelName`
  * @instructions
  * Determine the starship with the largest cargo capacity.
- * Return it's **_model_name_** property.
+ * Return it's **_model_** property.
  *
  * Sample data expected output: `Lambda-class T-4a shuttle`
 */
 function getLargestCargoStarshipModelName (character) {
-
+  const sortedShips = [...character.starships].sort((a, b) => {
+    if (parseInt(a.cargo_capacity, null) === parseInt(b.cargo_capacity, null)) return 0
+    return parseInt(a.cargo_capacity, null) < parseInt(b.cargo_capacity, null) ? 1 : -1
+  })
+  return sortedShips.length > 0 ? sortedShips[0].model : `none`
 }
 
 /**
@@ -119,33 +155,14 @@ function getLargestCargoStarshipModelName (character) {
  *
 */
 function getSlowestVehicleOrStarshipName (character) {
+  const sortedShips = [...character.starships, ...character.vehicles]
+  .sort((a, b) => {
+    if (parseInt(a.cargo_capacity, null) === parseInt(b.cargo_capacity, null)) return 0
+    return parseInt(a.cargo_capacity, null) > parseInt(b.cargo_capacity, null) ? 1 : -1
+  })
+  return sortedShips.length > 0 ? sortedShips[0].name : `none`
 
 }
-
-/**
- * ### Challenge `getFirstStarshipName`
- * @instructions
- *
-*/
-function getFirstStarshipName (character) {
-
-}
-
-/**
- * ### Challenge `getNthFilm`
- * @instructions
- * Return the Nth `films` value (in this case title).
- * Rules: N starts at 1, and includes only the range 1-3.
- * Any numbers outside that range should throw an error.
- * The Error must mention the name of your favorite _extra cheesy_ movie.
- *
- * Given film #1, expected output: `A New Hope`
- * Given film #7, expected output: `Space Balls`
-*/
-function getNthFilm (character, filmNumber) {
-
-}
-
 
 
 
@@ -160,13 +177,13 @@ if (typeof exports !== 'undefined') {
   module.exports = module.exports || {}
   if (getName) { module.exports.getName = getName }
   if (getFilmCount) { module.exports.getFilmCount = getFilmCount }
+  if (getFirstStarshipName) { module.exports.getFirstStarshipName = getFirstStarshipName }
   if (getSummary) { module.exports.getSummary = getSummary }
   if (getVehiclesCostInCreditsSumTotal) { module.exports.getVehiclesCostInCreditsSumTotal = getVehiclesCostInCreditsSumTotal }
   if (getStarshipPassengerAndCrewSumTotal) { module.exports.getStarshipPassengerAndCrewSumTotal = getStarshipPassengerAndCrewSumTotal }
+  if (getNthFilm) { module.exports.getNthFilm = getNthFilm }
   if (getCargoCapacityTotal) { module.exports.getCargoCapacityTotal = getCargoCapacityTotal }
   if (getFastestStarshipName) { module.exports.getFastestStarshipName = getFastestStarshipName }
   if (getLargestCargoStarshipModelName) { module.exports.getLargestCargoStarshipModelName = getLargestCargoStarshipModelName }
   if (getSlowestVehicleOrStarshipName) { module.exports.getSlowestVehicleOrStarshipName = getSlowestVehicleOrStarshipName }
-  if (getFirstStarshipName) { module.exports.getFirstStarshipName = getFirstStarshipName }
-  if (getNthFilm) { module.exports.getNthFilm = getNthFilm }
 }

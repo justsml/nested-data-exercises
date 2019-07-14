@@ -25,15 +25,15 @@ The difficulty increases as you progress.
 
 1. `getName(character)` -> `Luke Skywalker`
 1. `getFilmCount(character)` -> 5
+1. `getFirstStarshipName(character)` -> `X-wing`
 1. `getSummary(character)` -> `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
 1. `getVehiclesCostInCreditsSumTotal(character)` -> 8000
 1. `getStarshipPassengerAndCrewSumTotal(character)` -> 27
+1. `getNthFilm(character, filmNumber)` filmNumber=1 -> `A New Hope`
 1. `getCargoCapacityTotal(character)` -> 80124
 1. `getFastestStarshipName(character)` -> `X-wing`
 1. `getLargestCargoStarshipModelName(character)` -> `Lambda-class T-4a shuttle`
 1. `getSlowestVehicleOrStarshipName(character)` -> `Imperial Speeder Bike`
-1. `getFirstStarshipName(character)` -> `X-wing`
-1. `getNthFilm(character, filmNumber)` filmNumber=1 -> `A New Hope`
 
 
 <details>

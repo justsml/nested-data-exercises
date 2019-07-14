@@ -40,6 +40,12 @@ describe('getFilmCount()', () => {
   it('expected film count for Obi-Wan', () => { expect(getFilmCount(obiWanKenobi)).to.eq(6) })
 })
 
+describe('getFirstStarshipName()', () => {
+  it('Luke\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(lukeSkywalker)).to.eq(`X-wing`) })
+  it('Leia\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(leiaOrgana)).to.eq(`none`) })
+  it('Obi-Wan\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(obiWanKenobi)).to.eq(`Jedi starfighter`) })
+})
+
 describe('getSummary()', () => {
   it('expected bio for Luke', () => { expect(getSummary(lukeSkywalker)).to.eq(`Luke Skywalker, 172cm, 77kg. Featured in 5 films.`) })
   it('expected bio for Leia', () => { expect(getSummary(leiaOrgana)).to.eq(`Leia Organa, 150cm, 49kg. Featured in 5 films.`) })
@@ -58,6 +64,13 @@ describe('getStarshipPassengerAndCrewSumTotal()', () => {
   it('Obi-Wan\'s crew+passenger capacity', () => { expect(getStarshipPassengerAndCrewSumTotal(obiWanKenobi)).to.eq(48856) })
 })
 
+describe('getNthFilm()', () => {
+  it('Return the featured film name, within recognized range 1-3', () => { expect(getNthFilm(lukeSkywalker, 1)).to.eq(`A New Hope`) })
+  it('Return the featured film name, within recognized range 1-3', () => { expect(getNthFilm(leiaOrgana, 2)).to.eq(`The Empire Strikes Back`) })
+  it('Return the featured film name, within recognized range 1-3', () => { expect(getNthFilm(obiWanKenobi, 3)).to.eq(`Return of the Jedi`) })
+  // it('Throws error outside recognized range 1-3', () => { expect(() => getNthFilm(obiWanKenobi, 4)).to.throw() })
+})
+
 describe('getCargoCapacityTotal()', () => {
   it('Luke\'s expected cargo total', () => { expect(getCargoCapacityTotal(lukeSkywalker)).to.eq(80124) })
   it('Leia\'s expected cargo total', () => { expect(getCargoCapacityTotal(leiaOrgana)).to.eq(4) })
@@ -66,31 +79,18 @@ describe('getCargoCapacityTotal()', () => {
 
 describe('getFastestStarshipName()', () => {
   it('Luke\'s fastest starship', () => { expect(getFastestStarshipName(lukeSkywalker)).to.eq(`X-wing`) })
-  it('Leia\'s fastest starship', () => { expect(getFastestStarshipName(leiaOrgana)).to.eq(`X-wing`) })
-  it('Obi-Wan\'s fastest starship', () => { expect(getFastestStarshipName(obiWanKenobi)).to.eq(`X-wing`) })
+  it('Leia\'s fastest starship', () => { expect(getFastestStarshipName(leiaOrgana)).to.eq(`none`) })
+  it('Obi-Wan\'s fastest starship', () => { expect(getFastestStarshipName(obiWanKenobi)).to.eq(`Jedi Interceptor`) })
 })
 
 describe('getLargestCargoStarshipModelName()', () => {
   it('Model name of Luke\'s starship w/ largest cargo', () => { expect(getLargestCargoStarshipModelName(lukeSkywalker)).to.eq(`Lambda-class T-4a shuttle`) })
-  it('Model name of Leia\'s starship w/ largest cargo', () => { expect(getLargestCargoStarshipModelName(leiaOrgana)).to.eq(`Lambda-class T-4a shuttle`) })
-  it('Model name of Obi-Wan\'s starship w/ largest cargo', () => { expect(getLargestCargoStarshipModelName(obiWanKenobi)).to.eq(`Lambda-class T-4a shuttle`) })
+  it('Model name of Leia\'s starship w/ largest cargo', () => { expect(getLargestCargoStarshipModelName(leiaOrgana)).to.eq(`none`) })
+  it('Model name of Obi-Wan\'s starship w/ largest cargo', () => { expect(getLargestCargoStarshipModelName(obiWanKenobi)).to.eq(`Providence-class carrier/destroyer`) })
 })
 
 describe('getSlowestVehicleOrStarshipName()', () => {
   it('Luke\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(lukeSkywalker)).to.eq(`Imperial Speeder Bike`) })
   it('Leia\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(leiaOrgana)).to.eq(`Imperial Speeder Bike`) })
-  it('Obi-Wan\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(obiWanKenobi)).to.eq(`Imperial Speeder Bike`) })
-})
-
-describe('getFirstStarshipName()', () => {
-  it('Luke\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(lukeSkywalker)).to.eq(`X-wing`) })
-  it('Leia\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(leiaOrgana)).to.eq(`X-wing`) })
-  it('Obi-Wan\'s first starship, based on array/list order' , () => { expect(getFirstStarshipName(obiWanKenobi)).to.eq(`X-wing`) })
-})
-
-describe('getNthFilm()', () => {
-  it('Return the featured film name, within recognized range 1-3', () => { expect(getNthFilm(lukeSkywalker, 1)).to.eq(`A New Hope`) })
-  it('Return the featured film name, within recognized range 1-3', () => { expect(getNthFilm(leiaOrgana, 1)).to.eq(`A New Hope`) })
-  it('Return the featured film name, within recognized range 1-3', () => { expect(getNthFilm(obiWanKenobi, 1)).to.eq(`A New Hope`) })
-  // it('Throws error outside recognized range 1-3', () => { expect(() => getNthFilm(obiWanKenobi, 4)).to.throw() })
+  it('Obi-Wan\'s slowest transportation', () => { expect(getSlowestVehicleOrStarshipName(obiWanKenobi)).to.eq(`Jedi starfighter`) })
 })
