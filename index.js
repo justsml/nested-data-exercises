@@ -67,7 +67,8 @@ function getVehiclesCostInCreditsSumTotal (character) {
 /**
  * ### Challenge `getStarshipPassengerAndCrewSumTotal`
  * @instructions
- * Sum the number of crew and passenger spots in both vehicles and starships.
+ * Sum the number of crew and passenger spots for all starships defined on the
+ * input character.
  *
  * Sample data expected output: 27
 */
