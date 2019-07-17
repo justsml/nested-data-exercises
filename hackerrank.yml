@@ -1,0 +1,12 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  scoring:
+    command: "npm test"
+  ide_config:
+    default_open_files:
+      - index.js
+    project_menu:
+      run: npm start
+      install: npm install
+      test: npm test
