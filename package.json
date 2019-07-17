@@ -11,7 +11,7 @@
   "scripts": {
     "start": "lite-server",
     "build": "npx browserify ./data/people-export.js -o ./data/fixtures-bundle.js",
-    "test": "mocha --reporter=tap './test'",
+    "test": "npx mocha --reporter=tap './test'",
     "test:watch": "mocha --growl --reporter=list --bail --watch './test'"
   },
   "keywords": [
