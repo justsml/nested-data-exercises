@@ -9,7 +9,7 @@
     "type": "git"
   },
   "scripts": {
-    "start": "lite-server",
+    "start": "NODE_OPTIONS=--no-warnings ./node_modules/.bin/mocha ./test",
     "build": "npx browserify ./data/people-export.js -o ./data/fixtures-bundle.js",
     "pretest": "NODE_OPTIONS=--no-warnings npm install > /dev/null",
     "test": "NODE_OPTIONS=--no-warnings ./node_modules/.bin/mocha ./test",
