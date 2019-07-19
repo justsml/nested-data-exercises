@@ -106,32 +106,33 @@ npm start
 
 ## Data
 
-This is the data your code will be tested against.
+Example data your code will be tested against.
+
 ```js
 // Complete Test Data Object (credit: https://SWAPI.co)
 // Side note: Yes Star Wars 🤓 purists. It's a bit out of date. Talk to SWAPI about it.
 // Focus & follow instructions above. 🤖
 {
-	"name": "Luke Skywalker",
-	"height": "172",
-	"mass": "77",
-	"hair_color": "blond",
-	"skin_color": "fair",
-	"eye_color": "blue",
-	"birth_year": "19BBY",
-	"homeworld": "Tatooine",
-	"films": [
-		"A New Hope",
-		"The Empire Strikes Back",
-		"Return of the Jedi",
-		"Revenge of the Sith",
-		"The Force Awakens"
-	],
-	"species": [
-		"Human"
-	],
-	"vehicles": [
-		{
+  "name": "Luke Skywalker",
+  "height": "172",
+  "mass": "77",
+  "hair_color": "blond",
+  "skin_color": "fair",
+  "eye_color": "blue",
+  "birth_year": "19BBY",
+  "homeworld": "Tatooine",
+  "films": [
+    "A New Hope",
+    "The Empire Strikes Back",
+    "Return of the Jedi",
+    "Revenge of the Sith",
+    "The Force Awakens"
+  ],
+  "species": [
+    "Human"
+  ],
+  "vehicles": [
+    {
       "name": "Snowspeeder",
       "model": "t-47 airspeeder",
       "manufacturer": "Incom corporation",
@@ -142,7 +143,7 @@ This is the data your code will be tested against.
       "passengers": 0,
       "cargo_capacity": "10"
     },
-		{
+    {
       "name": "Imperial Speeder Bike",
       "model": "74-Z speeder bike",
       "manufacturer": "Aratech Repulsor Company",
@@ -153,9 +154,9 @@ This is the data your code will be tested against.
       "passengers": 1,
       "cargo_capacity": "4"
     }
-	],
-	"starships": [
-		{
+  ],
+  "starships": [
+    {
       "name": "X-wing",
       "model": "T-65 X-wing",
       "manufacturer": "Incom Corporation",
@@ -185,10 +186,10 @@ This is the data your code will be tested against.
       "MGLT": "50",
       "starship_class": "Armed government transport"
     }
-	],
-	"created": "2014-12-09T13:50:51.644000Z",
-	"edited": "2014-12-20T21:17:56.891000Z",
-	"url": "https://swapi.co/api/people/1/"
+  ],
+  "created": "2014-12-09T13:50:51.644000Z",
+  "edited": "2014-12-20T21:17:56.891000Z",
+  "url": "https://swapi.co/api/people/1/"
 }
 ```
 
