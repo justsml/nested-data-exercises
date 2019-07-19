@@ -17,7 +17,7 @@
  *
  * Sample data expected output: `Luke Skywalker`
 */
-function getName (character) {
+function getName(character) {
   // ⭐️ Example Solution Provided For First Function ⭐️
   return character.name
 }
@@ -29,8 +29,9 @@ function getName (character) {
  *
  * Sample data expected output: 5
  */
-function getFilmCount (character) {
+function getFilmCount(character) {
   // TODO: Add your code inside the functions (others below)
+  return character.films.length
 }
 
 /**
@@ -39,8 +40,9 @@ function getFilmCount (character) {
  * Return first starship's name from `starships` property.
  * If length is < 0. Return 'none'
 */
-function getFirstStarshipName (character) {
-  // TODO: Add your code here
+function getFirstStarshipName(character) {
+  if (character.starships.length === 0) return 'none'
+  return character.starships[0].name
 }
 
 /**
@@ -50,8 +52,8 @@ function getFirstStarshipName (character) {
  *    Template: `{name}, {height}cm, {mass}kg. Featured in {film count} films.`
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
-function getSummary (character) {
-  // TODO: Add your code here
+function getSummary(character) {
+  return `${character.name}, ${character.height}cm, ${character.mass}kg. Featured in ${character.films.length} films.`
 }
 
 /**
@@ -60,8 +62,10 @@ function getSummary (character) {
  * Sum the total cost in credits for all vehicles defined on the input character.
  * Sample data expected output: 8000
 */
-function getVehiclesCostInCreditsSumTotal (character) {
-  // TODO: Add your code here
+function getVehiclesCostInCreditsSumTotal(character) {
+  return character.vehicles.reduce((total, v) => {
+    return v.cost_in_credits + total
+  }, 0)
 }
 
 /**
@@ -72,8 +76,10 @@ function getVehiclesCostInCreditsSumTotal (character) {
  *
  * Sample data expected output: 27
 */
-function getStarshipPassengerAndCrewSumTotal (character) {
-  // TODO: Add your code here
+function getStarshipPassengerAndCrewSumTotal(character) {
+  return character.starships.reduce((total, s) => {
+    return s.crew + s.passengers + total
+  }, 0)
 }
 
 /**
@@ -87,8 +93,10 @@ function getStarshipPassengerAndCrewSumTotal (character) {
  * Given film #1, expected output: `A New Hope`
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
 */
-function getNthFilm (character, filmNumber) {
-  // TODO: Add your code here
+function getNthFilm(character, filmNumber) {
+  if (filmNumber < 1 || filmNumber > 3) throw new Error(`There are only 3 Star Wars movies, #1-3. Flan fiction excluded.`)
+  let filmIndex = filmNumber - 1
+  return character.films[filmIndex]
 }
 
 /**
@@ -99,8 +107,15 @@ function getNthFilm (character, filmNumber) {
  *
  * Sample data expected output: 80124
 */
-function getCargoCapacityTotal (character) {
-  // TODO: Add your code here
+function getCargoCapacityTotal(character) {
+  const starshipCargo = character.starships.reduce((total, s) => {
+    return s.cargo_capacity == null ? total : total + parseInt(s.cargo_capacity, null)
+  }, 0)
+  const vehicleCargo = character.vehicles.reduce((total, v) => {
+    return v.cargo_capacity == null ? total : total + parseInt(v.cargo_capacity, null)
+  }, 0)
+
+  return starshipCargo + vehicleCargo
 }
 
 /**
@@ -112,8 +127,12 @@ function getCargoCapacityTotal (character) {
  *
  * Sample data expected output: `X-wing`
 */
-function getFastestStarshipName (character) {
-  // TODO: Add your code here
+function getFastestStarshipName(character) {
+  const sortedShips = [...character.starships].sort((a, b) => {
+    if (parseInt(a.max_atmosphering_speed, null) === parseInt(b.max_atmosphering_speed, null)) return 0
+    return parseInt(a.max_atmosphering_speed, null) < parseInt(b.max_atmosphering_speed, null) ? 1 : -1
+  })
+  return sortedShips.length > 0 ? sortedShips[0].name : `none`
 }
 
 /**
@@ -125,8 +144,12 @@ function getFastestStarshipName (character) {
  *
  * Sample data expected output: `Lambda-class T-4a shuttle`
 */
-function getLargestCargoStarshipModelName (character) {
-  // TODO: Add your code here
+function getLargestCargoStarshipModelName(character) {
+  const sortedShips = [...character.starships].sort((a, b) => {
+    if (parseInt(a.cargo_capacity, null) === parseInt(b.cargo_capacity, null)) return 0
+    return parseInt(a.cargo_capacity, null) < parseInt(b.cargo_capacity, null) ? 1 : -1
+  })
+  return sortedShips.length > 0 ? sortedShips[0].model : `none`
 }
 
 /**
@@ -139,8 +162,18 @@ function getLargestCargoStarshipModelName (character) {
  * If the character does not have any starships or vehicles, then return string 'none'.
  *
 */
-function getSlowestVehicleOrStarshipName (character) {
-  // TODO: Add your code here
+function getSlowestVehicleOrStarshipName(character) {
+  const sortedShips = [...character.starships, ...character.vehicles]
+    .sort((a, b) => {
+      const cargoA = parseInt(a.max_atmosphering_speed, null)
+      const cargoB = parseInt(b.max_atmosphering_speed, null)
+
+      if (cargoA === cargoB) return 0
+      return cargoA === cargoB ? 0 :
+        cargoA > cargoB ? 1 : -1
+    })
+  // console.log('sortedShips', sortedShips)
+  return sortedShips.length > 0 ? sortedShips[0].name : `none`
 }
 
 
