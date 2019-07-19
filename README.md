@@ -6,7 +6,7 @@ This challenge will test your ability to work with nested Objects and Arrays.
 
 Uses [real-world 'inspired' data.](#data)
 
-> If you are experienced on this topic, expand the "💡 Challenge Yourself!" section (following the instructions.)
+> If you are experienced on this topic, expand the ["💡 Challenge Yourself!" section](#stretch) (following the instructions.)
 
 ##### Index
 
@@ -21,7 +21,7 @@ Uses [real-world 'inspired' data.](#data)
 
 The difficulty increases as you progress.
 
-> Before you begin: review [test data below](#data)
+> Before you begin coding, review [test data below](#data)
 
 1. `getName(character)` -> `Luke Skywalker`
 1. `getFilmCount(character)` -> 5
@@ -36,16 +36,21 @@ The difficulty increases as you progress.
 1. `getSlowestVehicleOrStarshipName(character)` -> `Imperial Speeder Bike`
 
 
+### Stretch
+
 <details>
   <summary> 💡 Challenge Yourself! (expand for stretch tips) </summary>
 
-  * Research & use different patterns.
-  * Trade completed code with a peer, take turns (30-60 min.) pair programming a refactor. Talk through & optimize as needed.
-  * Time yourself. See if you can beat your own time *starting over.* **Speed run!**
+* Research & use different patterns. (Destructuring, move common code into reusable helper methods, functional programming techniques)
+* Trade completed code with a peer:
+  * Pair program: Take turns (30-60 min.) working through a refactor. Talk through & optimize as needed.
+  * Trade code for feedback! (Example format: 3&1, 3 things that you liked and 1 to improve.)
+* Time yourself. See if you can beat your own time *starting over.* **Speed run!**
+* See how many tests you can pass/complete before Googling or asking for help.
+* When you're finished, refactor & improve readability. Write up why it is improved.
+
 </details>
 
-* See how many you can complete before Googling or asking for help.
-* When you're finished, refactor & improve readability. Write up why it is improved.
 
 ## Get Started
 
