@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.01" tests="33" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-07-19T03:37:59" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="getName()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0.001">
+    <testcase name="getName() expected name for `Luke`" time="0.001" classname="expected name for `Luke`">
+    </testcase>
+    <testcase name="getName() expected name for `Leia`" time="0" classname="expected name for `Leia`">
+    </testcase>
+    <testcase name="getName() expected name for `Obi-Wan`" time="0" classname="expected name for `Obi-Wan`">
+    </testcase>
+  </testsuite>
+  <testsuite name="getFilmCount()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getFilmCount() expected film count for Luke" time="0" classname="expected film count for Luke">
+    </testcase>
+    <testcase name="getFilmCount() expected film count for Leia" time="0" classname="expected film count for Leia">
+    </testcase>
+    <testcase name="getFilmCount() expected film count for Obi-Wan" time="0" classname="expected film count for Obi-Wan">
+    </testcase>
+  </testsuite>
+  <testsuite name="getFirstStarshipName()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getFirstStarshipName() Luke&apos;s first starship, based on array/list order" time="0" classname="Luke&apos;s first starship, based on array/list order">
+    </testcase>
+    <testcase name="getFirstStarshipName() Leia&apos;s first starship, based on array/list order" time="0" classname="Leia&apos;s first starship, based on array/list order">
+    </testcase>
+    <testcase name="getFirstStarshipName() Obi-Wan&apos;s first starship, based on array/list order" time="0" classname="Obi-Wan&apos;s first starship, based on array/list order">
+    </testcase>
+  </testsuite>
+  <testsuite name="getSummary()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getSummary() expected bio for Luke" time="0" classname="expected bio for Luke">
+    </testcase>
+    <testcase name="getSummary() expected bio for Leia" time="0" classname="expected bio for Leia">
+    </testcase>
+    <testcase name="getSummary() expected bio for Obi-Wan" time="0" classname="expected bio for Obi-Wan">
+    </testcase>
+  </testsuite>
+  <testsuite name="getVehiclesCostInCreditsSumTotal()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getVehiclesCostInCreditsSumTotal() Luke&apos;s vehicle cost total" time="0" classname="Luke&apos;s vehicle cost total">
+    </testcase>
+    <testcase name="getVehiclesCostInCreditsSumTotal() Leia&apos;s vehicle cost total" time="0" classname="Leia&apos;s vehicle cost total">
+    </testcase>
+    <testcase name="getVehiclesCostInCreditsSumTotal() Obi-Wan&apos;s vehicle cost total" time="0" classname="Obi-Wan&apos;s vehicle cost total">
+    </testcase>
+  </testsuite>
+  <testsuite name="getStarshipPassengerAndCrewSumTotal()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getStarshipPassengerAndCrewSumTotal() Luke&apos;s crew+passenger capacity" time="0" classname="Luke&apos;s crew+passenger capacity">
+    </testcase>
+    <testcase name="getStarshipPassengerAndCrewSumTotal() Leia&apos;s crew+passenger capacity" time="0" classname="Leia&apos;s crew+passenger capacity">
+    </testcase>
+    <testcase name="getStarshipPassengerAndCrewSumTotal() Obi-Wan&apos;s crew+passenger capacity" time="0" classname="Obi-Wan&apos;s crew+passenger capacity">
+    </testcase>
+  </testsuite>
+  <testsuite name="getNthFilm()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getNthFilm() Return the featured film name, within recognized range 1-3" time="0" classname="Return the featured film name, within recognized range 1-3">
+    </testcase>
+    <testcase name="getNthFilm() Return the featured film name, within recognized range 1-3" time="0" classname="Return the featured film name, within recognized range 1-3">
+    </testcase>
+    <testcase name="getNthFilm() Return the featured film name, within recognized range 1-3" time="0" classname="Return the featured film name, within recognized range 1-3">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCargoCapacityTotal()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getCargoCapacityTotal() Luke&apos;s expected cargo total" time="0" classname="Luke&apos;s expected cargo total">
+    </testcase>
+    <testcase name="getCargoCapacityTotal() Leia&apos;s expected cargo total" time="0" classname="Leia&apos;s expected cargo total">
+    </testcase>
+    <testcase name="getCargoCapacityTotal() Obi-Wan&apos;s expected cargo total" time="0" classname="Obi-Wan&apos;s expected cargo total">
+    </testcase>
+  </testsuite>
+  <testsuite name="getFastestStarshipName()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0.001">
+    <testcase name="getFastestStarshipName() Luke&apos;s fastest starship" time="0" classname="Luke&apos;s fastest starship">
+    </testcase>
+    <testcase name="getFastestStarshipName() Leia&apos;s fastest starship" time="0" classname="Leia&apos;s fastest starship">
+    </testcase>
+    <testcase name="getFastestStarshipName() Obi-Wan&apos;s fastest starship" time="0.001" classname="Obi-Wan&apos;s fastest starship">
+    </testcase>
+  </testsuite>
+  <testsuite name="getLargestCargoStarshipModelName()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0">
+    <testcase name="getLargestCargoStarshipModelName() Model name of Luke&apos;s starship w/ largest cargo" time="0" classname="Model name of Luke&apos;s starship w/ largest cargo">
+    </testcase>
+    <testcase name="getLargestCargoStarshipModelName() Model name of Leia&apos;s starship w/ largest cargo" time="0" classname="Model name of Leia&apos;s starship w/ largest cargo">
+    </testcase>
+    <testcase name="getLargestCargoStarshipModelName() Model name of Obi-Wan&apos;s starship w/ largest cargo" time="0" classname="Model name of Obi-Wan&apos;s starship w/ largest cargo">
+    </testcase>
+  </testsuite>
+  <testsuite name="getSlowestVehicleOrStarshipName()" timestamp="2019-07-19T03:37:59" tests="3" file="/Users/dlevy/code/oss/nested-data-exercises/test/index.test.js" failures="0" time="0.008">
+    <testcase name="getSlowestVehicleOrStarshipName() Luke&apos;s slowest transportation" time="0.006" classname="Luke&apos;s slowest transportation">
+    </testcase>
+    <testcase name="getSlowestVehicleOrStarshipName() Leia&apos;s slowest transportation" time="0" classname="Leia&apos;s slowest transportation">
+    </testcase>
+    <testcase name="getSlowestVehicleOrStarshipName() Obi-Wan&apos;s slowest transportation" time="0.002" classname="Obi-Wan&apos;s slowest transportation">
+    </testcase>
+  </testsuite>
+</testsuites>
