@@ -11,8 +11,8 @@
   "scripts": {
     "start": "lite-server",
     "build": "npx browserify ./data/people-export.js -o ./data/fixtures-bundle.js",
-    "pretest": "npm install",
-    "test": "./node_modules/.bin/mocha ./test",
+    "pretest": "export NODE_NO_WARNINGS=1 npm install",
+    "test": "node --no-warnings ./node_modules/.bin/mocha ./test",
     "test:watch": "./node_modules/.bin/mocha --growl --reporter=list --bail --watch './test'"
   },
   "keywords": [
