@@ -30,7 +30,7 @@ function getName(character) {
  * Sample data expected output: 5
  */
 function getFilmCount(character) {
-  // TODO: Add your code inside the functions (others below)
+  // TODO: Add your code inside the functions (others below).
 
 }
 
@@ -41,7 +41,7 @@ function getFilmCount(character) {
  * If length is < 0. Return 'none'
 */
 function getFirstStarshipName(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -52,7 +52,7 @@ function getFirstStarshipName(character) {
  *    Result: `Luke Skywalker, 172cm, 77kg. Featured in 5 films.`
  */
 function getSummary(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -62,7 +62,7 @@ function getSummary(character) {
  * Sample data expected output: 8000
 */
 function getVehiclesCostInCreditsSumTotal(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -74,7 +74,7 @@ function getVehiclesCostInCreditsSumTotal(character) {
  * Sample data expected output: 27
 */
 function getStarshipPassengerAndCrewSumTotal(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -89,7 +89,7 @@ function getStarshipPassengerAndCrewSumTotal(character) {
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
 */
 function getNthFilm(character, filmNumber) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -101,7 +101,7 @@ function getNthFilm(character, filmNumber) {
  * Sample data expected output: 80124
 */
 function getCargoCapacityTotal(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -114,7 +114,7 @@ function getCargoCapacityTotal(character) {
  * Sample data expected output: `X-wing`
 */
 function getFastestStarshipName(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -127,7 +127,7 @@ function getFastestStarshipName(character) {
  * Sample data expected output: `Lambda-class T-4a shuttle`
 */
 function getLargestCargoStarshipModelName(character) {
-
+  // TODO: Add your code here.
 }
 
 /**
@@ -141,7 +141,7 @@ function getLargestCargoStarshipModelName(character) {
  *
 */
 function getSlowestVehicleOrStarshipName(character) {
-
+  // TODO: Add your code here.
 }
 
 
