@@ -11,8 +11,9 @@
   "scripts": {
     "start": "lite-server",
     "build": "npx browserify ./data/people-export.js -o ./data/fixtures-bundle.js",
-    "test": "npm install && mocha --reporter=tap './test'",
-    "test:watch": "mocha --growl --reporter=list --bail --watch './test'"
+    "pretest": "npm install",
+    "test": "./node_modules/.bin/mocha ./test",
+    "test:watch": "./node_modules/.bin/mocha --growl --reporter=list --bail --watch './test'"
   },
   "keywords": [
     "object",
@@ -27,6 +28,8 @@
     "chai": "^4.2.0",
     "esm": "^3.2.25",
     "mocha": "^6.1.4",
+    "mocha-junit-reporter": "^1.23.1",
+    "mocha-multi-reporters": "^1.1.7",
     "test": "^0.6.0"
   },
   "devDependencies": {
