@@ -3,6 +3,9 @@ configuration:
   has_webserver: false
   scoring:
     command: "npm test"
+    files:
+      - unit.xml
+
   ide_config:
     default_open_files:
       - index.js
