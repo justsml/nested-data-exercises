@@ -131,8 +131,11 @@ function getLargestCargoStarshipModelName (character) {
 
 /**
  * ### Challenge `getSlowestVehicleOrStarshipName`
+ * Difficulty: _Tricky_
+ *
  * @instructions
- * Find the slowest transport (including vehicles and starships) and return its name.
+ * Find the slowest transport (including vehicles and starships)
+ * based on `max_atmosphering_speed`, and return its name.
  * If the character does not have any starships or vehicles, then return string 'none'.
  *
 */
