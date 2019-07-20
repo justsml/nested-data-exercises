@@ -38,7 +38,7 @@ function getFilmCount(character) {
  * ### Challenge `getFirstStarshipName`
  * @instructions
  * Return first starship's name from `starships` property.
- * If length is < 0. Return 'none'
+ * If length is 0. Return 'none'
 */
 function getFirstStarshipName(character) {
   // TODO: Add your code here.
